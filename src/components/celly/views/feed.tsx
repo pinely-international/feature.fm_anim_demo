@@ -1,7 +1,8 @@
 import type { ReactNode } from 'react';
 import styled from 'styled-components';
-import iconSeach from '../../../assets/icons/search.svg';
+import iconSearch from '../../../assets/icons/search.svg';
 import { Hamburger } from '../hamburger.ts';
+import { Header } from '../header.ts';
 
 interface Props {
   children?: ReactNode;
@@ -17,7 +18,7 @@ export function Feed({ children }: Props) {
       </Header>
       <Actions>
         <Search>
-          <img src={iconSeach} alt="Search Icon" />
+          <img src={iconSearch} alt="Search Icon" />
           <span>Search</span>
         </Search>
         <Selected>
@@ -42,23 +43,6 @@ const Container = styled.div`
 		height: 94px;
 		width: 100%;
 		background: linear-gradient(0, #fafafa 20%, rgb(255 255 255 / 0) 100%);
-	}
-`;
-
-const Header = styled.header`
-	display: grid;
-	grid-template-columns: auto 1fr auto;
-	align-items: center;
-	margin-bottom: 28px;
-	
-	h1 {
-		font-size: 14px;
-		margin-right: 20px;
-	}
-	
-	span {
-		font-size: 9px;
-		color: #9b9b9b;
 	}
 `;
 
