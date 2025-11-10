@@ -1,0 +1,147 @@
+import type { ReactNode } from 'react';
+import styled from 'styled-components';
+import iconSeach from '../../../assets/icons/search.svg';
+
+interface Props {
+  children?: ReactNode;
+}
+
+export function Feed({ children }: Props) {
+  return (
+    <Container>
+      <Header>
+        <h1>My Links</h1>
+        <span>15 in total</span>
+        <Hamburger />
+      </Header>
+      <Actions>
+        <Search>
+          <img src={iconSeach} alt="Search Icon" />
+          <span>Search</span>
+        </Search>
+        <Selected>
+          <div>9</div>
+          <span>Selected</span>
+        </Selected>
+        <Tabs>
+          <Tab active>Enabled</Tab>
+          <Tab>Archived</Tab>
+        </Tabs>
+      </Actions>
+      <Children>{children}</Children>
+    </Container>
+  );
+}
+
+const Container = styled.div`
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		height: 94px;
+		width: 100%;
+		background: linear-gradient(0, #fafafa 20%, rgb(255 255 255 / 0) 100%);
+	}
+`;
+
+const Header = styled.header`
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	align-items: center;
+	margin-bottom: 28px;
+	
+	h1 {
+		font-size: 14px;
+		margin-right: 20px;
+	}
+	
+	span {
+		font-size: 9px;
+		color: #9b9b9b;
+	}
+`;
+
+const Hamburger = styled.div`
+	height: 2px;
+	width: 12px;
+	background: black;
+	margin-right: 10px;
+	
+	&::before {
+		content: '';
+		position: absolute;
+		display: block;
+		height: 2px;
+		width: 6px;
+		background: black;
+		margin: 5px 0 0 3px;
+	}
+	
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
+		height: 2px;
+		width: 6px;
+		background: black;
+		margin: -5px 0 0 3px;
+	}
+`;
+
+const Actions = styled.div`
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 9px;
+	padding-bottom: 9px;
+`;
+
+const Search = styled.div`
+	padding-bottom: 9px;
+	display: flex;
+	gap: 9px;
+	border-bottom: 2px solid #dedede;
+	grid-column: span 2;
+	
+	span {
+		font-size: 9px;
+	}
+`;
+
+const Selected = styled.div`
+	display: flex;
+	font-size: 9px;
+	align-items: center;
+	gap: 5px;
+	border-bottom: 2px solid transparent;
+
+	div {
+		width: 17px;
+		background: black;
+		border-radius: 50%;
+		aspect-ratio: 1 / 1;
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+`;
+
+const Tabs = styled.div`
+	display: grid;
+	column-gap: 12px;
+	grid-template-columns: repeat(2, auto);
+	align-items: center;
+`;
+
+const Tab = styled.span<{ active?: boolean }>`
+	height: 12px;
+	font-size: 9px;
+	font-weight: ${({ active = false }) => (active ? 500 : 400)};
+	border-bottom: ${({ active }) => (active ? '2px solid black' : '2px solid transparent')};
+`;
+
+const Children = styled.div`
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+`;
