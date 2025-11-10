@@ -1,2 +1,2 @@
-export { Mobile } from "./mobile";
+export { Celly } from "./celly";
 export { Rect } from "./rect";
