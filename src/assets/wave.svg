@@ -1,0 +1,55 @@
+<svg data-name="b1715f5f-430e-4098-9e40-8f8b2e653f05" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 169 172"
+     class="jsx-1e32e3e7967723fe for-everyting__wave_deacors"
+     style="clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0% 100%);">
+    <defs class="jsx-1e32e3e7967723fe">
+        <clipPath id="b245785b-5ac5-47eb-9878-6d2c1596bbd1" class="jsx-1e32e3e7967723fe">
+            <rect width="169" height="172" style="fill:none" class="jsx-1e32e3e7967723fe"></rect>
+        </clipPath>
+    </defs>
+    <g id="fe5b7da0-2d11-4fad-a8b0-ed2e1df601c2" data-name="a19dc68f-8327-4899-b20e-a7e042aa98d8"
+       class="jsx-1e32e3e7967723fe">
+        <g id="f9c7a4cc-554a-4924-9013-82b7ae2f44f3" data-name="f2799ba9-33be-4301-8acc-3bd7d1d3b525"
+           class="jsx-1e32e3e7967723fe">
+            <path id="b191637a-0049-4142-b7ae-70c8144856f6" data-name="fc4e7155-7ad9-475c-890e-730c687b64e9"
+                  d="M0,0H169V172H0Z" style="fill-rule:evenodd" class="jsx-1e32e3e7967723fe"></path>
+            <g style="clip-path:url(#b245785b-5ac5-47eb-9878-6d2c1596bbd1)" class="jsx-1e32e3e7967723fe">
+                <g class="jsx-1e32e3e7967723fe linePathW">
+                    <path d="M-40.67,23.54S10.82-21,66.09,13.63c28.71,18,79.08,5.69,98.95-5.87,17.88-10.42,60.46,5.07,60.46,5.07"
+                          style="fill:none;stroke:#fff;stroke-width:3px" class="jsx-1e32e3e7967723fe lineEl"
+                          data-original="M-39.84,23.37s76-.47,101.34-.54c27.08-.07,108.33,0,108.33,0l51,.54"></path>
+                </g>
+                <g class="jsx-1e32e3e7967723fe linePathW">
+                    <path d="M-42.35,49.3S9.14,4.81,64.41,39.4c28.7,18,79.08,5.69,98.94-5.87,17.89-10.42,60.47,5.07,60.47,5.07"
+                          style="fill:none;stroke:#fff;stroke-width:3px" class="jsx-1e32e3e7967723fe lineEl"
+                          data-original="M-41.52,49.13s76-.47,101.33-.53c27.09-.08,108.34,0,108.34,0l51,.53"></path>
+                </g>
+                <g class="jsx-1e32e3e7967723fe linePathW">
+                    <path d="M-42.35,74.3S9.14,29.81,64.41,64.4c28.7,18,79.08,5.69,98.94-5.87,17.89-10.42,60.47,5.07,60.47,5.07"
+                          style="fill:none;stroke:#fff;stroke-width:3px" class="jsx-1e32e3e7967723fe lineEl"
+                          data-original="M-41.52,74.13s76-.47,101.33-.53c27.09-.08,108.34,0,108.34,0l51,.53"></path>
+                </g>
+                <g class="jsx-1e32e3e7967723fe linePathW">
+                    <path d="M-42.35,99.3S9.14,54.81,64.41,89.4c28.7,18,79.08,5.69,98.94-5.87,17.89-10.42,60.47,5.07,60.47,5.07"
+                          style="fill:none;stroke:#fff;stroke-width:3px" class="jsx-1e32e3e7967723fe lineEl"
+                          data-original="M-41.52,99.13s76-.47,101.33-.53c27.09-.08,108.34,0,108.34,0l51,.53"></path>
+                </g>
+                <g class="jsx-1e32e3e7967723fe linePathW">
+                    <path d="M-42.35,125.3S9.14,80.81,64.41,115.4c28.7,18,79.08,5.69,98.94-5.87,17.89-10.42,60.47,5.07,60.47,5.07"
+                          style="fill:none;stroke:#fff;stroke-width:3px" class="jsx-1e32e3e7967723fe lineEl"
+                          data-original="M-41.52,125.13s76-.47,101.33-.53c27.09-.08,108.34,0,108.34,0l51,.53"></path>
+                </g>
+                <g class="jsx-1e32e3e7967723fe linePathW">
+                    <path d="M-42.35,150.3s51.49-44.49,106.76-9.9c28.7,18,79.08,5.69,98.94-5.87,17.89-10.42,60.47,5.07,60.47,5.07"
+                          style="fill:none;stroke:#fff;stroke-width:3px" class="jsx-1e32e3e7967723fe lineEl"
+                          data-original="M-41.52,150.13s76-.47,101.33-.53c27.09-.08,108.34,0,108.34,0l51,.53"></path>
+                </g>
+                <g class="jsx-1e32e3e7967723fe linePathW">
+                    <path d="M-41 173.069C-41 173.069 10.49 128.579 65.76 163.169C94.46 181.169 144.84 168.859 164.7 157.299C182.59 146.879 225.17 162.369 225.17 162.369"
+                          style="fill:none;stroke:#fff;stroke-width:3px" class="jsx-1e32e3e7967723fe lineEl"
+                          data-original="M-41 171.566C-41 171.566 35 171.096 60.33 171.036C87.42 170.956 168.67 171.036 168.67 171.036L219.67 171.566"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

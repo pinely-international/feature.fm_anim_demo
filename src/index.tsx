@@ -6,9 +6,14 @@ import { App } from './app';
 const GlobalStyle = createGlobalStyle`
 	@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400..500&display=swap');
 	
-	* {
+	body {
+		margin: 0;
 		user-select: none;
 		font-family: "Outfit", sans-serif;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
 	}
 `;
 

@@ -1,2 +1,2 @@
-export { Celly } from "./celly";
-export { Rect } from "./rect";
+export { Celly } from './celly';
+export { Pattern } from './pattern';
