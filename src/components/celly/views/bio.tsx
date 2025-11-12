@@ -1,4 +1,8 @@
 import styled from 'styled-components';
+import {
+  ExpandVerticallyFromBottom,
+  ExpandVerticallyFromTop,
+} from '../../animiations.ts';
 import { Card } from '../card';
 import { Hamburger } from '../hamburger.ts';
 import { Header } from '../header.ts';
@@ -11,16 +15,20 @@ export function Bio() {
         <span />
         <Hamburger />
       </Header>
-      <Children>
+      <ExpandVerticallyFromTop top={40} left={0} delay={1} timing={0.5}>
         <Image src="https://placecats.com/230/118" alt="Bio Link Artwork" />
-        <Info>
-          <h1>Father John Misty</h1>
-          <span>welcome to my bio link</span>
-        </Info>
-        <Card type="spotify" />
-        <Card type="apple" />
-        <Image src="https://placecats.com/230/118" alt="Bio Link Artwork" />
-      </Children>
+      </ExpandVerticallyFromTop>
+      <ExpandVerticallyFromBottom top={195} left={0} delay={1} timing={0.5}>
+        <Children>
+          <Info>
+            <h1>Father John Misty</h1>
+            <span>welcome to my bio link</span>
+          </Info>
+          <Card type="spotify" />
+          <Card type="apple" />
+          <Image src="https://placecats.com/230/118" alt="Bio Link Artwork" />
+        </Children>
+      </ExpandVerticallyFromBottom>
       <Action>
         <span>+</span>
         <span>Add something</span>
@@ -64,7 +72,7 @@ const Info = styled.div`
 
 const Action = styled.div`
 	position: absolute;
-	bottom: 0;
+	top: 410px;
 	left: 0;
 	height: 54px;
 	width: calc(100% + calc(18px * 2));

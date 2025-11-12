@@ -1,6 +1,10 @@
 import type { ReactNode } from 'react';
 import styled from 'styled-components';
 import iconSearch from '../../../assets/icons/search.svg';
+import {
+  ExpandVerticallyFromBottom,
+  ExpandVerticallyFromTop,
+} from '../../animiations.ts';
 import { Hamburger } from '../hamburger.ts';
 import { Header } from '../header.ts';
 
@@ -16,21 +20,37 @@ export function Feed({ children }: Props) {
         <span>15 in total</span>
         <Hamburger />
       </Header>
-      <Actions>
-        <Search>
-          <img src={iconSearch} alt="Search Icon" />
-          <span>Search</span>
-        </Search>
-        <Selected>
-          <div>9</div>
-          <span>Selected</span>
-        </Selected>
-        <Tabs>
-          <Tab active>Enabled</Tab>
-          <Tab>Archived</Tab>
-        </Tabs>
-      </Actions>
-      <Children>{children}</Children>
+      <ExpandVerticallyFromTop
+        style={{ width: 230 }}
+        top={65}
+        left={16}
+        delay={2}
+        timing={0.5}
+      >
+        <Actions>
+          <Search>
+            <img src={iconSearch} alt="Search Icon" />
+            <span>Search</span>
+          </Search>
+          <Selected>
+            <div>9</div>
+            <span>Selected</span>
+          </Selected>
+          <Tabs>
+            <Tab active>Enabled</Tab>
+            <Tab>Archived</Tab>
+          </Tabs>
+        </Actions>
+      </ExpandVerticallyFromTop>
+      <ExpandVerticallyFromBottom
+        style={{ width: 230 }}
+        top={125}
+        left={16}
+        delay={2}
+        timing={0.5}
+      >
+        <Children>{children}</Children>
+      </ExpandVerticallyFromBottom>
       <Button>+</Button>
     </Container>
   );
@@ -55,6 +75,7 @@ const Actions = styled.div`
 `;
 
 const Search = styled.div`
+	width: 100%;
 	padding-bottom: 9px;
 	display: flex;
 	gap: 9px;
