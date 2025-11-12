@@ -31,6 +31,7 @@ export function Feed({ children }: Props) {
         </Tabs>
       </Actions>
       <Children>{children}</Children>
+      <Button>+</Button>
     </Container>
   );
 }
@@ -102,4 +103,21 @@ const Children = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
+`;
+
+const Button = styled.div`
+	z-index: 1;
+	position: absolute;
+	width: 33px;
+	height: 33px;
+	right: 24px;
+	bottom: 12px;
+	border-radius: 50%;
+	background: #ff5262;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	font-weight: lighter;
 `;
